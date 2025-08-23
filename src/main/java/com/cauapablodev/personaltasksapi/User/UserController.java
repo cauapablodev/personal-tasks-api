@@ -1,14 +1,13 @@
-package com.cauapablodev.personaltasksapi.Task;
+package com.cauapablodev.personaltasksapi.User;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/task")
-public class TaskController {
-
+@RequestMapping("/user")
+public class UserController {
     @RequestMapping("/hello")
     public String hello() {
-        return "Hello, World!";
+        return "Hello, User!";
     }
 }
