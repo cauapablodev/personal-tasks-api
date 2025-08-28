@@ -16,9 +16,16 @@ public class TaskModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_task")
     private Long id;
+
+    @Column(name = "task", nullable = false)
     private String task;
+
+    @Column(name = "description")
     private String description;
+
+    @Column(name = "completed")
     private boolean completed;
 
     @ManyToOne(fetch = FetchType.LAZY)
